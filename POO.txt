@@ -1,0 +1,16 @@
+- Abstração
+    - propriedades/atributos/caracteristicas
+    - metodos/funcoes
+- Encapsulamento
+    - acesso/responsavel por si mesmo
+    - getter/setter
+- Herança
+    - herdar
+- Polimorfismo
+    - herdar/implementar/sobrescrever
+
+CLASSE
+- modelo de algo
+OBJETO
+- construir/inicializar
+    - instancia/objeto/concreto
