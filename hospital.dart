@@ -1,11 +1,10 @@
 import 'unidade.dart';
 
 class Hospital implements Unidade {
-  @override
-  String _nome = '';
+  bool sla = true;
 
   @override
-  String _codigo = '';
+  String _nome = '';
 
   bool leitos = true;
   // construtor
