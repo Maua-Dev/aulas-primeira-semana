@@ -1,6 +1,6 @@
 import 'unidade.dart';
 
-class Hospital extends Unidade {
+class Hospital implements Unidade {
   @override
   String _nome = '';
 
