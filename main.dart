@@ -1,11 +1,18 @@
 import 'hospital.dart';
-import 'unidade.dart';
+import 'paciente.dart';
+import 'posto.dart';
 
 void main() {
-  Unidade unidadeABC = Unidade('ABC');
-  unidadeABC.nome = 'a';
-  print(unidadeABC.nome);
+  Paciente usuario1 = Paciente('roberto', 75, Hospital('Santo Amaro'));
+  usuario1.consulta();
 
-  Unidade unidadeSantoAmaro = Hospital('Santo Amaro');
-  unidadeSantoAmaro.nome = 'ABCD';
+  Paciente usuario2 = Paciente('cleison', 75, Posto('Santo Andre'));
+  usuario2.consulta();
+
+  // Hospital hospital = Hospital();
+  // IUnidade posto = Posto();
+  // Paciente usuario = Paciente('avenida', -50, hospital);
+  // Paciente usuario2 = Paciente('avenida', -50, posto);
+  // print(usuario.nome);
+  // print(usuario.idade);
 }
