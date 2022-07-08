@@ -1,17 +1,17 @@
 import 'paciente.dart';
 import 'unidade_interface.dart';
 
-class Hospital implements IUnidade {
+class Motoca implements IEntregador {
   @override
   String nome;
 
-  Hospital(String this.nome);
-  bool leito = true;
+  Motoca(String this.nome);
+  bool lanterna = true;
 
   @override
-  void atender(Paciente paciente, int idade) {
-    print('Unidade: ' + this.nome);
-    print('Status Leitos: ' + leito.toString());
-    print('Atendendo paciente: ' + paciente.nome);
+  void entregar(LojaDoRonaldo loja, String bairro) {
+    print('Entregador: ' + this.nome);
+    print('Entrega de noite: ' + (lanterna ? 'Sim' : 'Não'));
+    print('Loja de Comida: ' + loja.nome);
   }
 }

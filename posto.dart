@@ -1,15 +1,15 @@
 import 'paciente.dart';
 import 'unidade_interface.dart';
 
-class Posto implements IUnidade {
+class Bikeman implements IEntregador {
   @override
   String nome;
 
-  Posto(String this.nome);
+  Bikeman(String this.nome);
 
   @override
-  void atender(Paciente paciente, int idade) {
-    print('Unidade: ' + this.nome);
-    print('Atendendo paciente: ' + paciente.nome);
+  void entregar(LojaDoRonaldo loja, String bairro) {
+    print('Entregador: ' + this.nome);
+    print('Loja de Comida: ' + loja.nome);
   }
 }

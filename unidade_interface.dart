@@ -1,7 +1,7 @@
 import 'paciente.dart';
 
-abstract class IUnidade {
+abstract class IEntregador {
   late String nome;
 
-  void atender(Paciente paciente, int idade);
+  void entregar(LojaDoRonaldo loja, String bairro);
 }

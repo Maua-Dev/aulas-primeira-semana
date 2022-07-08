@@ -1,14 +1,15 @@
 import 'hospital.dart';
 import 'unidade_interface.dart';
 
-class Paciente {
+class LojaDoRonaldo {
   String nome;
-  int idade;
-  IUnidade unidadeAtendimento;
+  String bairro;
+  IEntregador entregador;
   //construtor
-  Paciente(String this.nome, int this.idade, IUnidade this.unidadeAtendimento);
+  LojaDoRonaldo(
+      String this.nome, String this.bairro, IEntregador this.entregador);
 
-  void consulta() {
-    unidadeAtendimento.atender(this, this.idade);
+  void delivery() {
+    entregador.entregar(this, this.bairro);
   }
 }

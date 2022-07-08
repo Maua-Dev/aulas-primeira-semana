@@ -3,11 +3,12 @@ import 'paciente.dart';
 import 'posto.dart';
 
 void main() {
-  Paciente usuario1 = Paciente('roberto', 75, Hospital('Santo Amaro'));
-  usuario1.consulta();
+  LojaDoRonaldo loja1 =
+      LojaDoRonaldo('RonaldoAlabaster', 'ZS', Motoca('Alfred'));
+  loja1.delivery();
 
-  Paciente usuario2 = Paciente('cleison', 75, Posto('Santo Andre'));
-  usuario2.consulta();
+  LojaDoRonaldo loja2 = LojaDoRonaldo('RonaldoLolo', 'ZL', Motoca('Clebinho'));
+  loja2.delivery();
 
   // Hospital hospital = Hospital();
   // IUnidade posto = Posto();
